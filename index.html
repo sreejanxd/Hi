@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Bot - Pair Code System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Get Your Music via WhatsApp 🎵</h1>
+        
+        <label for="whatsapp">📱 WhatsApp নম্বর:</label>
+        <input type="text" id="whatsapp" placeholder="আপনার WhatsApp নম্বর দিন...">
+
+        <button onclick="getPairCode()">🔑 Get Pair Code</button>
+
+        <div id="pair-code-section" style="display: none;">
+            <p>✅ আপনার Pair Code: <strong id="pair-code"></strong></p>
+            
+            <label for="music-url">🎶 মিউজিক লিংক দিন:</label>
+            <input type="text" id="music-url" placeholder="Catbox লিংক দিন...">
+            
+            <button onclick="sendMusic()">📤 Send Music</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
